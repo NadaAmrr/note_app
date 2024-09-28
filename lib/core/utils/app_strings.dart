@@ -1,7 +1,8 @@
 class AppString {
   /// const
   static const String appName = "Notes";
-
+  /// box
+  static const String noteBox = "noteBox";
   /// img paths
   static const String _imgBase = "assets/images/";
   static const String edit = "Edit";

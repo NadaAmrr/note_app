@@ -23,7 +23,9 @@ class HomeScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(20)
             ),
             context: context, builder: (context) {
-          return NoteSheetWidget(buttonNote: AppString.addNoteBtn, onTap: () {  },);
+          return NoteSheetWidget(buttonNote: AppString.addNoteBtn, onTap: () {
+            Navigator.pop(context);
+          },);
         });
       },backgroundColor: AppColors.greyDark, child: const Icon(Icons.add),),
       /// App Bar
@@ -31,7 +33,9 @@ class HomeScreen extends StatelessWidget {
         title:  Text(AppString.appName,style: AppStyle.styleBold20.copyWith(color: AppColors.white.withOpacity(0.7))),
         actions: [
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+
+            },
             child: Container(
               decoration: BoxDecoration(
                   color: AppColors.grey,
