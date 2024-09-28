@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
             ),
             context: context, builder: (context) {
           return NoteSheetWidget(buttonNote: AppString.addNoteBtn, onTap: () {
-            Navigator.pop(context);
+            // logic of button to check form key current state
           },);
         });
       },backgroundColor: AppColors.greyDark, child: const Icon(Icons.add),),
